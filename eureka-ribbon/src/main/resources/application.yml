@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-ribbon
+
+server:
+  port: 20015
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:20011/eureka/
+
+
+

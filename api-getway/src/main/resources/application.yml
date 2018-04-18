@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: api-getway
+server:
+  port: 20017
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:20011/eureka/
+zuul:
+  add-host-header: true
+  AccessFilter:
+    pre:
+      disable: true
+  ThrowExceptionFilter:
+    pre:
+      disable: true
+
